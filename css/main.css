@@ -79,18 +79,25 @@ p {
 
 .container-cursos {
    display: grid;
-   grid-template-columns: auto;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cursos {
-   max-width: calc(100% / 4);
+   /* max-width: calc(100% / 4); */
    padding: 1rem;
    background-color: chartreuse;
 }
 
+.course-img {
+   width: 100%;
+   aspect-ratio: 1/1;
+   border: 2px solid black;
+   background-color: bisque;
+}
+
 form {
-   display: grid;
-   grid-template-rows: ;
+   display: flex;
+   flex-direction: column;
    margin: auto;
    max-width: 30rem;
    gap: 0.5rem;
