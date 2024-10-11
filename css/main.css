@@ -7,14 +7,16 @@
 :root {
    /* COLORS */
    --iridium: #181818;
+   --iridium-50: #18181888;
 
    /* FONTS */
-   --h-family: "Montserrat", sans-serif;
-   /* --h-family: "Afacad Flux", sans-serif; */
-   /* --h-family: "Poppins", sans-serif; */
-   --p-family: "Lora", serif;
-   /* --p-family: "Merriweather", serif; */
-   /* --p-family: "Roboto", sans-serif; */
+   --f-family-sans: "Montserrat", sans-serif;
+   /* --f-family-sans: "Afacad Flux", sans-serif; */
+   /* --f-family-sans: "Poppins", sans-serif; */
+   --f-family-serif: "Lora", serif;
+   /* --f-family-serif: "Merriweather", serif; */
+   /* --f-family-serif: "Roboto", sans-serif; */
+   --p-family: "Hind Madurai", sans-serif;
    --p-size: 12pt;
    --p-line-height: 1.75;
 
@@ -103,14 +105,10 @@ nav,
 }
 
 nav {
-   font-family: var(--h-family);
-
+   font-family: var(--f-family-sans);
    font-weight: 600;
-   padding: 1rem 0 1rem 0;
+   padding: 2.5rem 0 2.5rem 0;
    background-color: darkblue;
-}
-
-section {
 }
 
 a {
@@ -134,7 +132,7 @@ h4,
 h5,
 h6 {
    /* FONTS */
-   font-family: var(--h-family);
+   font-family: var(--f-family-sans);
    font-weight: 600;
    text-align: center;
    color: var(--iridium);
@@ -169,24 +167,48 @@ p {
    font-size: calc(var(--p-size) * 1.5);
 }
 
+label {
+   font-family: var(--f-family-sans);
+   font-weight: 400;
+}
+
 button,
-input[type="text"],
-input[type="submit"] {
+input,
+textarea {
    /* display: flex;
    align-self: center; */
    min-width: 10rem;
-   min-height: var(--btn-height-global);
-   font-family: var(p-family);
+   min-height: var(--field-height-global);
+   font-family: var(--f-family-sans);
+   font-weight: 400;
    border-radius: var(--btn-radious-global);
    list-style: none;
    border: none;
-   cursor: pointer;
+   outline: none;
    transition: 0.5s;
+}
+
+input,
+textarea {
+   padding: 0.5rem;
+}
+
+button,
+input[type="submit"] {
+   font-size: calc(var(--p-size) * 1);
+   font-weight: 600;
+   cursor: pointer;
 }
 
 button:hover,
 input[type="submit"]:hover {
    background-color: crimson;
+}
+
+textarea {
+   min-height: 10rem;
+   resize: none;
+   overflow: hidden;
 }
 
 .btn_mg-top {
@@ -210,6 +232,7 @@ input[type="submit"]:hover {
 .nav-item {
    display: flex;
    vertical-align: middle;
+   font-size: calc(var(--p-size) * 1);
 }
 
 #button-search {
@@ -261,9 +284,4 @@ form {
    min-width: 30rem;
    gap: 0.5rem;
    background-color: aqua;
-}
-
-input {
-   min-height: var(--field-height-global);
-   padding: 0.5rem;
 }
