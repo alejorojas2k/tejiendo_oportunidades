@@ -10,6 +10,7 @@
    --iridium-50: #18181888;
    --navbar-background: #ffffffcc;
    --navbar-shadow: var(--iridium-50);
+
    /* FONTS */
    --f-family-sans: "Montserrat", sans-serif;
    /* --f-family-sans: "Afacad Flux", sans-serif; */
@@ -32,9 +33,12 @@
    --navbar-gap: 1.5rem;
 
    /* RADIOUS */
-   --img-radious-global: 1rem;
+   --img-radious-global: 0rem;
    --btn-radious-global: 0.5rem;
    --field-radious-global: var(--btn-radious-global);
+
+   /* BORDERS */
+   --global-layout-border: 2px solid black;
 }
 
 .rounded {
@@ -64,7 +68,6 @@ body {
 }
 
 #announcements {
-   font-size: calc(var(--p-size) * 2);
    align-content: center;
    padding: 1rem;
    background-color: aquamarine;
@@ -72,7 +75,7 @@ body {
 
 .container-announcement {
    max-width: var(--max-width-xxl);
-   background-color: coral;
+   /*    background-color: coral; */
    overflow: hidden;
 }
 
@@ -80,6 +83,8 @@ body {
    position: relative;
    left: 100%;
    padding: 0;
+   font-size: calc(var(--p-size) * 1.25);
+   margin-bottom: 0;
    animation: roller 30s linear 2s infinite forwards;
    text-wrap: nowrap;
 }
@@ -101,7 +106,7 @@ footer {
    width: 100%;
    padding: 5rem;
    align-items: center;
-   border: 2px solid black;
+   border: var(--global-layout-border);
 }
 
 header {
@@ -141,6 +146,7 @@ nav {
 a {
    text-decoration: none;
    color: black;
+   transition: 0.25s;
 }
 a:hover {
    color: red;
@@ -163,7 +169,7 @@ h6 {
    font-weight: 600;
    text-align: center;
    color: var(--iridium);
-   padding-bottom: 2.5rem;
+   margin-bottom: 2.5rem;
 }
 
 h1 {
@@ -213,7 +219,7 @@ textarea {
    border: none;
    outline: none;
    transition: 0.5s;
-   border: 2px solid black;
+   border: var(--global-layout-border);
 }
 
 input,
@@ -261,23 +267,40 @@ textarea {
    display: flex;
    vertical-align: middle;
    font-size: calc(var(--p-size) * 1);
+   transition: 0.25s;
+}
+
+.nav-item:hover {
+   transform: translatey(-0.2rem);
 }
 
 #container-search {
    display: flex;
    flex-direction: row;
-   gap: 0.25rem;
+   border-radius: var(--field-radious-global);
+   overflow: hidden;
+   gap: 0rem;
+   border: var(--global-layout-border);
+}
+
+#field-search {
+   padding-left: 1.5rem;
+   border-radius: 0;
+   border: none;
 }
 
 #button-search {
    min-width: 1rem;
    margin: 0;
+   border-radius: 0;
    padding: 0 1rem 0 1rem;
+   border: none;
 }
 
 #slider {
    width: 100%;
-   height: 50vh;
+   height: 60vh;
+   margin: auto;
    padding: 0;
    background-color: darkseagreen;
 }
@@ -292,6 +315,7 @@ textarea {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 2.5rem;
+   margin-top: 2.5rem;
 }
 
 .cursos {
@@ -304,6 +328,7 @@ textarea {
 
 .cursos-title {
    font-family: var(--f-family-serif);
+   margin-bottom: 1rem;
 }
 
 .copy-1-img {
@@ -311,7 +336,7 @@ textarea {
    aspect-ratio: 16/9;
    margin-bottom: 2.5rem;
    object-fit: cover;
-   border: 2px solid black;
+   border: var(--global-layout-border);
 }
 
 .container-cursos-img {
@@ -319,8 +344,9 @@ textarea {
    width: 100%;
    aspect-ratio: 1/1;
    margin: 0 0 1rem 0;
-   border: 2px solid black;
+   border: var(--global-layout-border);
    overflow: hidden;
+   background-color: white;
    transition: 0.5s;
    background-color: darkorange;
 }
@@ -330,6 +356,7 @@ textarea {
    aspect-ratio: 1/1;
    object-fit: cover;
    transition: 0.5s;
+   filter: opacity(1);
    background-color: bisque;
 }
 
@@ -339,6 +366,14 @@ textarea {
 
 .container-cursos-img:hover {
    transform: translatey(-1rem);
+}
+
+.container-cursos-img:hover .course-img {
+   filter: opacity(0.5);
+}
+
+.btn-cursos {
+   margin-top: 1rem;
 }
 
 .container-testimonials {
@@ -359,7 +394,7 @@ textarea {
    aspect-ratio: 4/3;
    margin-bottom: 1rem;
    object-fit: cover;
-   border: 2px solid black;
+   border: var(--global-layout-border);
 }
 
 .testimonial {
@@ -373,6 +408,22 @@ form {
    min-width: 30rem;
    gap: 0.5rem;
    background-color: aqua;
+}
+
+.container-footer {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   gap: 2.5rem;
+}
+
+.v-separator {
+   width: 0.1rem;
+   background-color: black;
+}
+
+.info {
+   text-wrap: nowrap;
 }
 
 @media screen and (width <= 1024px) {
