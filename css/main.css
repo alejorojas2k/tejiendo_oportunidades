@@ -26,11 +26,15 @@
    --max-width-xxl: 1024px;
 
    /* HEIGHTS */
-   --btn-height-global: 2.5rem;
+   --btn-height-global: ;
    --field-height-global: var(--btn-height-global);
+
+   /* PADDINGS */
+   --btn-padding-global: 0.5rem;
 
    /* GAPS */
    --navbar-gap: 1.5rem;
+   --gap-global: 1rem;
 
    /* RADIOUS */
    --img-radious-global: 0rem;
@@ -39,6 +43,11 @@
 
    /* BORDERS */
    --global-layout-border: 2px solid black;
+
+   /* TEXT */
+   --align-left {
+      text-align: left;
+   }
 }
 
 .rounded {
@@ -144,13 +153,13 @@ nav {
 }
 
 a {
-   text-decoration: none;
+   /* text-decoration: none; */
    color: black;
    transition: 0.25s;
 }
-a:hover {
+/* a:hover {
    color: red;
-}
+} */
 a:active {
    color: black;
 }
@@ -223,10 +232,11 @@ textarea {
    border: var(--global-layout-border);
 }
 
+button,
 input,
 select,
 textarea {
-   padding: 0.5rem;
+   padding: var(--btn-padding-global);
 }
 
 button,
@@ -274,6 +284,8 @@ textarea {
    vertical-align: middle;
    font-size: calc(var(--p-size) * 1);
    transition: 0.25s;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .nav-item:hover {
@@ -290,7 +302,8 @@ textarea {
 }
 
 #field-search {
-   padding-left: 1.5rem;
+   /* padding-left: 1.5rem; */
+   padding: var(--btn-padding-global);
    border-radius: 0;
    border: none;
 }
@@ -299,7 +312,8 @@ textarea {
    min-width: 1rem;
    margin: 0;
    border-radius: 0;
-   padding: 0 1rem 0 1rem;
+   /* padding: 0 1rem 0 1rem; */
+   padding: var(--btn-padding-global);
    border: none;
 }
 
@@ -325,6 +339,29 @@ textarea {
    position: relative;
    width: 100%;
    object-fit: cover;
+}
+
+.container-noticias {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   gap: 1.5rem;
+}
+
+.container-noticia {
+   text-align: left;
+}
+
+a header-noticia {
+   text-decoration: underline;
+}
+
+.header-noticia {
+   text-align: left;
+   margin-bottom: 0.5rem;
+}
+
+.copy-1-noticia {
+   font-size: calc(var(--p-size) * 1.2);
 }
 
 .container-cursos {
@@ -355,10 +392,11 @@ textarea {
    border: var(--global-layout-border);
 }
 
+.container-noticia-img,
 .container-cursos-img {
    position: relative;
    width: 100%;
-   aspect-ratio: 1/1;
+   aspect-ratio: 4/3;
    margin: 0 0 1rem 0;
    border: var(--global-layout-border);
    overflow: hidden;
@@ -367,6 +405,7 @@ textarea {
    background-color: darkorange;
 }
 
+.noticia-img,
 .course-img {
    width: 100%;
    aspect-ratio: 1/1;
@@ -381,7 +420,7 @@ textarea {
 }
 
 .container-cursos-img:hover {
-   transform: translatey(-1rem);
+   transform: translatey(-0.25rem);
 }
 
 .container-cursos-img:hover .course-img {
