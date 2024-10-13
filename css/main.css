@@ -207,6 +207,7 @@ label {
 
 button,
 input,
+select,
 textarea {
    /* display: flex;
    align-self: center; */
@@ -223,6 +224,7 @@ textarea {
 }
 
 input,
+select,
 textarea {
    padding: 0.5rem;
 }
@@ -238,6 +240,10 @@ button:hover,
 input[type="submit"]:hover {
    background-color: crimson;
 }
+
+/* select {
+   max-width: max-content;
+} */
 
 textarea {
    min-height: 10rem;
@@ -401,19 +407,35 @@ textarea {
    font-size: calc(var(--p-size) * 1.25);
 }
 
+.container-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 100%;
+   gap: 2.5rem;
+   margin: 2.5rem auto auto auto;
+}
+
 form {
    display: flex;
    flex-direction: column;
-   margin: 2.5rem auto auto auto;
-   min-width: 30rem;
    gap: 0.5rem;
    background-color: aqua;
 }
 
+label,
+input,
+textarea {
+   min-width: 100%;
+}
+
+iframe {
+   border: var(--global-layout-border);
+}
 .container-footer {
    display: flex;
    flex-direction: row;
    width: 100%;
+   max-height: min-content;
    gap: 2.5rem;
 }
 
