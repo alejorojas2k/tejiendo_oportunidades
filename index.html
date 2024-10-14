@@ -12,19 +12,37 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link href="/assets/fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="/css/main.css
 	">
 </head>
 
 <body>
-	<!--========================================================== -->
-	<!-- ENCABEZADO -->
-	<!--========================================================== -->
-	<header class="container-fluid bg-primary d-flex justify-content-center">
-		<p class="text-light mb-0 p-2 fs-6">CONTACTANOS +57 300-300-0000</p>
-	</header>
+	<!-- ANUNCIOS -->
+	<section id="announcements">
+		<div class="container-announcement">
+			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur qui libero
+				asperiores at! Quod corrupti in atque neque alias libero.</h4>
+		</div>
+	</section>
 
+	<header>
 		<!-- MENÚ -->
 		<nav id="navbar">
 			<div class="container-navbar">
@@ -33,47 +51,49 @@
 					<a href="/">
 						<li class="nav-item">Inicio</li>
 					</a>
-					<a href="">
+					<a href="#cursos">
 						<li class="nav-item">Cursos</li>
 					</a>
-					<a href="">
+					<a href="#voluntariado">
 						<li class="nav-item">Voluntariado</li>
 					</a>
-					<a href="">
+					<a href="#blog">
 						<li class="nav-item">Blog</li>
 					</a>
-					<a href="">
+					<a href="#testimonios">
 						<li class="nav-item">Testimonios</li>
 					</a>
-					<a href="">
+					<a href="#contacto">
 						<li class="nav-item">Contacto</li>
 					</a>
-					<li><input type="text"></li>
-					<button id="button-search">Buscar</button>
+					<li id="container-search"><input type="text" id="field-search">
+						<button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
 	<!-- CARRUSEL -->
-	<section>
-		<div class="container-general">
-			<div class="slider" id="slider">[SLIDER HERE]</div>
-		</div>
+	<section id="slider">
+		<!-- <img class="slider-img" src="/img/slider_img_01.jpg" alt=""> -->
+		<video src="/media/4863395_Happy_People_3840x2160.mp4" class="slider-video" autoplay loop></video>
 	</section>
 
 	<!-- TITULAR -->
-	<section>
+	<!-- <section>
 		<div class="container-general">
 			<h1>TEJIENDO OPORTUNIDADES</h1>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- INTRODUCCIÓN -->
-	<section>
+	<section id="introduccion">
 		<div class="container-general">
-			<h2>Introduccion</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<h1>TEJIENDO OPORTUNIDADES</h1>
+			<!-- <h2>Introduccion</h2> -->
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
@@ -81,109 +101,250 @@
 	</section>
 
 	<!-- CURSOS -->
-	<section>
+	<section id="cursos">
 		<div class="container-general">
 			<h2>Cursos Gratuitos</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
 			<div class="container-cursos">
 				<div class="cursos">
-					<img class="course-img" src="" alt="">
-					<h3>Curso 1</h3>
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/clases_cocina.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button>Conoce más</button>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
 				</div>
 				<div class="cursos">
-					<img class="course-img" src="" alt="">
-					<h3>Curso 1</h3>
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_cocina_ninos.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button>Conoce más</button>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
 				</div>
 				<div class="cursos">
-					<img class="course-img" src="" alt="">
-					<h3>Curso 1</h3>
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_ingles_ninos.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button>Conoce más</button>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
 				</div>
 				<div class="cursos">
-					<img class="course-img" src="" alt="">
-					<h3>Curso 1</h3>
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button>Conoce más</button>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
+				</div>
+				<div class="cursos">
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
+				</div>
+				<div class="cursos">
+					<div class="container-cursos-img rounded">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 1</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
+					<button class="btn_mg-top btn-cursos">Conoce más</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- VOLUNTARIADO Y COLABORACIÓN -->
-	<section>
+	<section id="voluntariado">
 		<div class="container-general">
 			<h2>Voluntariado y Colaboraciones</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<img class="copy-1-img rounded" src="/img/khalil-radi-11y9Eu0JwEI-unsplash.jpg" alt="">
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
-			<a href="/html/template.html"><button>Conoce más</button></a>
+			<a href="/html/template.html"><button class="btn_mg-top">Conoce más</button></a>
 		</div>
 	</section>
 
 	<!-- BLOG -->
-	<section>
+	<section id="blog">
 		<div class="container-general">
 			<h2>Blog</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
-				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p><button>Conoce más</button>
+				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p><button class="btn_mg-top">Conoce más</button>
 		</div>
 	</section>
 
 	<!-- TESTIMONIOS -->
-	<section>
+	<section id="testimonios">
 		<div class="container-general">
 			<h2>Testimonios</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
-				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p><button>Conoce más</button>
+				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
+			<div class="container-testimonials">
+				<div class="container-testimonial">
+					<div class="youtube-video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lPKXdhUMicw?si=GsuHT6jH0RXYicZO"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
+				</div>
+				<div class="container-testimonial">
+					<div class="youtube-video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Cnsd74w1FTo?si=MB_w8MaCf3Q3TXuN"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
+				</div>
+				<div class="container-testimonial">
+					<div class="youtube-video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/23g2sVYrqxg?si=3451Q9BvU2lAfyFM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
+				</div>
+				<div class="container-testimonial">
+					<div class="youtube-video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gkzU-9X7WB4?si=G8rtx0SXJIunqdRo"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
+				</div>
+			</div>
+			<button class="btn_mg-top">Conoce más</button>
 		</div>
 	</section>
 
 	<!-- CONTACTO -->
-	<section>
+	<section id="contacto">
 		<div class="container-general">
 			<h2>Contacto</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro accusamus, dolorem
+			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
-			<form action="/php/send-form.php">
-				<label for="">Nombre</label>
-				<input type="text" name="name" id="name" placeholder="Ingresa tu nombre *" required>
-				<label for="">Correo electronico</label>
-				<input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico *" required>
-				<label for="">Mensaje</label>
-				<input type="textbox" name="message" id="message" placeholder="Escribe tu mensaje *" required>
-				<label for=""></label>
-				<input type="submit" name="send" id="send" placeholder="">
-			</form>
+			<div class="container-form">
+				<iframe class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.8601363876846!2d-102.43519288503833!3d19.954026289761035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e8b33dcc5e691%3A0xe0c0141a2e4f091!2sLa%20Plaza!5e0!3m2!1sen!2sco!4v1728778247486!5m2!1sen!2sco"
+					width="100%" height="100%" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<form action="/php/send-form.php">
+					<label for="">Nombre</label>
+					<input type="text" name="name" id="name" placeholder="Ingresa tu nombre *" required>
+					<label for="">Correo electrónico</label>
+					<input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico *" required>
+					<label for="">Departamento</label>
+					<select name="" id="">
+						<option value="">Seleeciona un departamento *</option>
+						<option value="">Amazonas</option>
+						<option value="">Antioquia</option>
+						<option value="">Atlantico</option>
+						<option value="">Arauca</option>
+						<option value="">Bolivar</option>
+						<option value="">Boyacá</option>
+						<option value="">Caldas</option>
+						<option value="">Caqueta</option>
+						<option value="">Casanare</option>
+						<option value="">Cauca</option>
+						<option value="">Cesar</option>
+						<option value="">Chocó</option>
+						<option value="">Córdoba</option>
+						<option value="">Cundinamarca</option>
+						<option value="">Guajira</option>
+						<option value="">Guainía</option>
+						<option value="">Guaviare</option>
+						<option value="">Huila</option>
+						<option value="">Magdalena</option>
+						<option value="">Meta</option>
+						<option value="">Nariño</option>
+						<option value="">Norte de Santander</option>
+						<option value="">Putumayo</option>
+						<option value="">Quindio</option>
+						<option value="">Risaralda</option>
+						<option value="">San Andrés y Providencia</option>
+						<option value="">Santander</option>
+						<option value="">Sucre</option>
+						<option value="">Tolima</option>
+						<option value="">Valle del Cauca</option>
+						<option value="">Vaupés</option>
+						<option value="">Vichada</option>
+					</select>
+					<label for="">Mensaje</label>
+					<textarea name="message" id="message" placeholder="Escribe tu mensaje *" required></textarea>
+					<label for=""></label>
+					<input type="submit" name="send" id="send" value="Enviar">
+				</form>
+			</div>
 		</div>
 	</section>
 
 	<!-- INFO -->
 	<footer>
 		<div class="container-general">
-
-			<p>Tejiendo Oportunidades</p>
-			<p>Calle 10 #20 - 30, Tangamandapio</p>
-			<p>Teléfono: +99 321.123.45678</p>
-			<p>©2024 Todos los derechos reservados.</p>
+			<div class="container-footer">
+				<div class="info">
+					<p class="info">Inicio</p>
+					<p class="info">¿Quiénes somos?</p>
+					<p class="info">¿Qué hacemos?</p>
+					<p class="info">Fuentes de financiación</p>
+					<p class="info">Donaciones</p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info">Trabaja con nosotros</p>
+					<p class="info">Nuestros aliados</p>
+					<p class="info">Normatividad</p>
+					<p class="info">Sala de prensa</p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info"><a href=""><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info">Tejiendo Oportunidades</p>
+					<p class="info"><i class="fa-solid fa-location-dot"></i> Calle 10 #20 - 30, Tangamandapio</p>
+					<p class="info"><a href="tel:+5732112345678"><i class="fa-solid fa-phone"></i> +57 321.123.45678</a></p>
+					<p class="info"><a href="mailto:contacto@tejiendooportunidades.org"><i class="fa-solid fa-envelope"></i>
+							contacto@tejiendooportunidades.org</a></p>
+					<p>©2024 Todos los derechos reservados.</p>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
