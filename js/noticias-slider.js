@@ -8,10 +8,10 @@ console.log(currentNoticiasPosition);
 
 sliderButtonRight.addEventListener("click", sliderToLeft);
 sliderButtonLeft.addEventListener("click", sliderToRight);
-document.getElementById("container-noticia-1").style.backgroundColor = "red";
+/* document.getElementById("container-noticia-1").style.backgroundColor = "red";
 document.getElementById("container-noticia-2").style.backgroundColor = "blue";
 document.getElementById("container-noticia-3").style.backgroundColor = "yellow";
-document.getElementById("container-noticia-4").style.backgroundColor = "green";
+document.getElementById("container-noticia-4").style.backgroundColor = "green"; */
 
 let counterNoticias = document.querySelectorAll(".container-noticia").length;
 let leftDisplace = 0;
