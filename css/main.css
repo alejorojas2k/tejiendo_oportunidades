@@ -74,9 +74,6 @@ header {
    z-index: 100;
 }
 
-body {
-}
-
 #announcements {
    align-content: center;
    padding: 1rem;
@@ -464,7 +461,7 @@ a header-noticia {
 }
 
 .course-img:hover {
-   /* transform: scale(1.05); */
+   transform: scale(1.05);
 }
 
 .container-cursos-img:hover {
