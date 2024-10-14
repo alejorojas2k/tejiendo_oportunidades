@@ -26,11 +26,15 @@
    --max-width-xxl: 1024px;
 
    /* HEIGHTS */
-   --btn-height-global: 2.5rem;
+   --btn-height-global: ;
    --field-height-global: var(--btn-height-global);
+
+   /* PADDINGS */
+   --btn-padding-global: 0.5rem;
 
    /* GAPS */
    --navbar-gap: 1.5rem;
+   --gap-global: 1rem;
 
    /* RADIOUS */
    --img-radious-global: 0rem;
@@ -39,6 +43,12 @@
 
    /* BORDERS */
    --global-layout-border: 2px solid black;
+
+   /* BUTTONS */
+   --slider-button-size: 2.5rem;
+
+   /* TRANSITIONS */
+   --transition-normal: 0.25s;
 }
 
 .rounded {
@@ -62,9 +72,6 @@ header {
    box-shadow: 0 0 2.5rem var(--navbar-shadow);
    background-color: var(--navbar-background);
    z-index: 100;
-}
-
-body {
 }
 
 #announcements {
@@ -144,13 +151,13 @@ nav {
 }
 
 a {
-   text-decoration: none;
+   /* text-decoration: none; */
    color: black;
    transition: 0.25s;
 }
-a:hover {
+/* a:hover {
    color: red;
-}
+} */
 a:active {
    color: black;
 }
@@ -188,6 +195,14 @@ h4 {
    font-size: calc(var(--p-size) * 1.5);
 }
 
+h5 {
+   font-size: calc(var(--p-size) * 1);
+}
+
+h6 {
+   font-size: calc(var(--p-size) * 0.75);
+}
+
 p {
    /* FONTS */
    font-family: var(--p-family);
@@ -223,10 +238,11 @@ textarea {
    border: var(--global-layout-border);
 }
 
+button,
 input,
 select,
 textarea {
-   padding: 0.5rem;
+   padding: var(--btn-padding-global);
 }
 
 button,
@@ -274,6 +290,8 @@ textarea {
    vertical-align: middle;
    font-size: calc(var(--p-size) * 1);
    transition: 0.25s;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .nav-item:hover {
@@ -290,7 +308,8 @@ textarea {
 }
 
 #field-search {
-   padding-left: 1.5rem;
+   /* padding-left: 1.5rem; */
+   padding: var(--btn-padding-global);
    border-radius: 0;
    border: none;
 }
@@ -299,7 +318,8 @@ textarea {
    min-width: 1rem;
    margin: 0;
    border-radius: 0;
-   padding: 0 1rem 0 1rem;
+   /* padding: 0 1rem 0 1rem; */
+   padding: var(--btn-padding-global);
    border: none;
 }
 
@@ -325,6 +345,68 @@ textarea {
    position: relative;
    width: 100%;
    object-fit: cover;
+}
+
+.container-noticias {
+   position: relative;
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   gap: 1.5rem;
+   padding: 0 5rem 0 5rem;
+}
+
+.center-vertically {
+   margin: auto;
+}
+
+.slider-button {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   min-height: var(--slider-button-size);
+   aspect-ratio: 1/1;
+   font-size: calc(var(--p-size) * 2.5);
+   text-align: center;
+   color: var(--obsidian);
+   transition: var(--transition-normal) ease;
+   z-index: 20;
+   background-color: deepskyblue;
+}
+
+.slider-button:hover {
+   color: var(--obsidian);
+   transform: scale(1.25);
+   cursor: pointer;
+}
+
+#testimonials-slide-button-left,
+#projects-testimonials-slide-button-right {
+   top: calc(50% - var(--slider-button-size) / 2);
+   left: 0;
+   opacity: 0;
+}
+
+#testimonials-slide-button-right,
+#projects-testimonials-slide-button-right {
+   top: calc(50% - var(--slider-button-size) / 2);
+   right: 0;
+}
+
+.container-noticia {
+   text-align: left;
+}
+
+a header-noticia {
+   text-decoration: underline;
+}
+
+.header-noticia {
+   text-align: left;
+   margin-bottom: 0.5rem;
+}
+
+.copy-1-noticia {
+   font-size: calc(var(--p-size) * 1.2);
 }
 
 .container-cursos {
@@ -355,10 +437,11 @@ textarea {
    border: var(--global-layout-border);
 }
 
+.container-noticia-img,
 .container-cursos-img {
    position: relative;
    width: 100%;
-   aspect-ratio: 1/1;
+   aspect-ratio: 4/3;
    margin: 0 0 1rem 0;
    border: var(--global-layout-border);
    overflow: hidden;
@@ -367,6 +450,7 @@ textarea {
    background-color: darkorange;
 }
 
+.noticia-img,
 .course-img {
    width: 100%;
    aspect-ratio: 1/1;
@@ -377,11 +461,11 @@ textarea {
 }
 
 .course-img:hover {
-   /* transform: scale(1.05); */
+   transform: scale(1.05);
 }
 
 .container-cursos-img:hover {
-   transform: translatey(-1rem);
+   transform: translatey(-0.25rem);
 }
 
 .container-cursos-img:hover .course-img {
