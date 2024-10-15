@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tejiendo Oportunidades</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.webp">
 
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,45 +35,62 @@
 </head>
 
 <body>
-	<!-- ANUNCIOS -->
-	<section id="announcements">
-		<div class="container-announcement">
-			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur qui libero
-				asperiores at! Quod corrupti in atque neque alias libero.</h4>
-		</div>
-	</section>
 
 	<header>
 		<!-- MENÚ -->
 		<nav id="navbar">
-			<div class="container-navbar">
-				<div>TEJIENDO OPORTUNIDADES</div>
-				<ul id="navbar-items">
-					<a class="nav-item href=" #noticias">
-						<li>Noticias</li>
-					</a>
-					<a class="nav-item" href="/html/cursos.html">
-						<li>Cursos</li>
-					</a>
-					<a class="nav-item href=" #voluntariado">
-						<li>Voluntariado</li>
-					</a>
-					<a class="nav-item href=" #blog">
-						<li>Blog</li>
-					</a>
-					<a class="nav-item href=" #testimonios">
-						<li>Testimonios</li>
-					</a>
-					<a class="nav-item href=" #contacto">
-						<li>Contacto</li>
-					</a>
-					<li id="container-search"><input type="text" id="field-search">
-						<button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-					</li>
-				</ul>
-			</div>
+			<a href="/" class="navbar-container-logo">
+				<img class="navbar-logo" src="/img/logo.webp" alt="">
+			</a>
+			<ul id="navbar-items">
+				<a class="nav-item" href="#noticias">
+					<li>Noticias</li>
+				</a>
+				<a class="nav-item" href="/html/cursos.html">
+					<li>Cursos</li>
+				</a>
+				<a class="nav-item" href="#voluntariado">
+					<li>Voluntariado</li>
+				</a>
+				<a class="nav-item" href="#blog">
+					<li>Blog</li>
+				</a>
+				<a class="nav-item" href="#testimonios">
+					<li>Testimonios</li>
+				</a>
+				<a class="nav-item" href="#contacto">
+					<li>Contacto</li>
+				</a>
+				<!-- <li id="container-search"><input type="text" id="field-search">
+					<button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</li> -->
+			</ul>
 		</nav>
+		<div id="announcements">
+			<div class="container-announcement">
+				<h4 id="announcement-icon"><i class="fa-solid fa-bell text-color-red"></i> Noticias: </h4>
+				<div class="container-announcement-textroll">
+					<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span
+							class="text-color-red">|</span> Facere, corporis dolor quis suscipit modi eveniet. <span
+							class="text-color-red">|</span> Esse nostrum
+						quos nisi ab alias perspiciatis. <span class="text-color-red">|</span> Consequatur hic et
+						consequuntur. <span class="text-color-red">|</span> Vero libero neque impedit et nulla. <span
+							class="text-color-red">|</span> Modi expedita labore similique unde dignissimos quas minus rem
+						nihil. <span class="text-color-red">|</span> Voluptatibus molestias
+						necessitatibus porro optio nesciunt, perferendis sunt.</h4>
+					<h4 id="announcements-close"><i class="fa-solid fa-xmark"></i></h4>
+				</div>
+			</div>
 	</header>
+
+	<!-- ANUNCIOS -->
+	<!-- <section id="announcements">
+		<div class="container-announcement">
+			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur qui libero
+				asperiores at! Quod corrupti in atque neque alias libero.</h4>
+			<h4 id="announcements-close"><i class="fa-solid fa-xmark"></i></h4>
+		</div>
+	</section> -->
 
 	<!-- CARRUSEL -->
 	<section id="slider">
@@ -88,10 +106,9 @@
 	</section> -->
 
 	<!-- INTRODUCCIÓN -->
-	<section id="noticias">
+	<section id="introduccion">
 		<div class="container-general">
 			<h1>TEJIENDO OPORTUNIDADES</h1>
-			<h2>Introduccion</h2>
 			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
 				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
@@ -100,36 +117,90 @@
 		</div>
 	</section>
 
+
 	<!-- NOTICIAS -->
 	<section id="noticias">
 		<div class="container-general">
-			<div class="container-noticias">
-				<div class="container-noticia-img"><img class="noticia-img" src="/img/elianna-gill-kBCM8v4S2io-unsplash.jpg"
-						alt=""></div>
-				<a href="">
-					<div class="container-noticia">
-						<h5 class="header-noticia">Ocutbre 15, 2024</h5>
-						<h3 class="header-noticia">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, vitae?
-						</h3>
-						<p class="copy-1-noticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
-							similique
-							porro
-							accusamus, dolorem
-							non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos
-							sapiente
-							quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod
-							officia
-							nemo
-							nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
+			<div class="supercontainer-noticias">
+				<div class="container-noticias" id="container-noticias">
+					<div class="container-noticia" id="container-noticia-1">
+						<div class="container-noticia-img"><img class="noticia-img"
+								src="https://colombiavisible.com/wp-content/uploads/2023/03/La-Siembra-grupo-musical-1536x864.jpg"
+								alt=""></div>
+						<a href="/html/noticias.html">
+							<div class="container-noticia-text">
+								<h5 class="header-noticia">Ocutbre 15, 2024</h5>
+								<h3 class="header-noticia"> En Cúcuta, madre e hijas crearon una agrupación que le canta a las
+									mujeres y a la
+									desaparición forzada
+								</h3>
+								<p class="copy-1-noticia"><b>La Siembra</b> es una agrupación cucuteña conformada por tres
+									mujeres de
+									una misma familia que utilizan la música protesta para abordar temas como la migración, el
+									desplazamiento forzado y la violencia intrafamiliar. Quieren que el país conozca cómo
+									diferentes generaciones perciben estas mismas problemáticas.</p>
+							</div>
+						</a>
 					</div>
-				</a>
-				<div class="slider-button " id="testimonials-slide-button-left"><i
+					<div class="container-noticia" id="container-noticia-2">
+						<div class="container-noticia-img"><img class="noticia-img"
+								src="https://colombiavisible.com/wp-content/uploads/2022/01/Nuqui-Xplora-AGF-284-scaled-1-1536x1024.jpg"
+								alt=""></div>
+						<a href="/html/noticias.html">
+							<div class="container-noticia-text">
+								<h5 class="header-noticia">Ocutbre 14, 2024</h5>
+								<h3 class="header-noticia">Esta ruta turística rescata la cultura tradicional de Nuquí
+								</h3>
+								<p class="copy-1-noticia">La comunidad, junto con <b>Ancestral Travel</b>, crearon un paquete
+									turístico
+									para dar a conocer su cultura, la gastronomía de su pueblo y los ecosistemas del territorio.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="container-noticia" id="container-noticia-3">
+						<div class="container-noticia-img"><img class="noticia-img"
+								src="https://colombiavisible.com/wp-content/uploads/2022/01/dibulla-dentro-3-1536x864.jpeg"
+								alt=""></div>
+						<a href="/html/noticias.html">
+							<div class="container-noticia-text">
+								<h5 class="header-noticia">Ocutbre 13, 2024</h5>
+								<h3 class="header-noticia">En Dibulla, los pescadores se convirtieron también en guías
+									turísticos
+								</h3>
+								<p class="copy-1-noticia">Con relatos de altamar, tejidos de atarrayas y gastronomía
+									tradicional, los pescadores del corregimiento de la <b>Punta de Remedios</b> consolidaron un
+									proyecto turístico para contar las tradiciones que perduran a través de su oficio.</p>
+							</div>
+						</a>
+					</div>
+					<div class="container-noticia" id="container-noticia-4">
+						<div class="container-noticia-img"><img class="noticia-img"
+								src="https://colombiavisible.com/wp-content/uploads/2024/01/Cerro-Azul-1536x864.jpg" alt="">
+						</div>
+						<a href="/html/noticias.html">
+							<div class="container-noticia-text">
+								<h5 class="header-noticia">Ocutbre 12, 2024</h5>
+								<h3 class="header-noticia">En el Guaviare, los jóvenes le apuestan al turismo para transformar
+									el territorio
+								</h3>
+								<p class="copy-1-noticia">A través del trabajo con comunidades campesinas y firmantes de paz,
+									<b>Biodiverso Travel</b> está impulsando el turismo como un negocio verde que fortalece la
+									economía
+									del Guaviare. Conozca cuatro lugares que puede visitar si va al departamento.
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="slider-button" id="noticias-slide-button-left"><i
 						class="fa-solid fa-chevron-left center-vertically"></i>
 				</div>
-				<div class="slider-button" id="testimonials-slide-button-right"><i
+				<div class="slider-button" id="noticias-slide-button-right"><i
 						class="fa-solid fa-chevron-right center-vertically"></i>
 				</div>
 			</div>
+			<button class="btn_mg-top btn-cursos">Ver más</button>
 		</div>
 	</section>
 
@@ -143,63 +214,92 @@
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
 			<div class="container-cursos">
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/clases_cocina.jpg" alt=""></a>
 					</div>
 					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_cocina_ninos.jpg" alt=""></a>
 					</div>
-					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<h3 class="cursos-title">Curso 2</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_ingles_ninos.jpg" alt=""></a>
 					</div>
-					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<h3 class="cursos-title">Curso 3</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
 					</div>
-					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<h3 class="cursos-title">Curso 4</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
 					</div>
-					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<h3 class="cursos-title">Curso 5</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
-				<div class="cursos">
-					<div class="container-cursos-img rounded">
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
 						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
 					</div>
-					<h3 class="cursos-title">Curso 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium inventore error ad
+					<h3 class="cursos-title">Curso 6</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
 						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
-					<button class="btn_mg-top btn-cursos">Conoce más</button>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
+				</div>
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 7</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
+						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
+				</div>
+				<div class="cursos rounded">
+					<div class="container-cursos-img">
+						<a href="/html/cursos.html#"><img class="course-img" src="/img/curso_robotica.jpg" alt=""></a>
+					</div>
+					<h3 class="cursos-title">Curso 8</h3>
+					<p class="copy-1-cursos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium
+						inventore error ad
+						neque ducimus alias nesciunt necessitatibus aperiam laboriosam corrupti iste qui totam quisquam.</p>
+					<!-- 					<button class="btn_mg-top btn-cursos">Conoce más</button> -->
 				</div>
 			</div>
+			<button class="btn_mg-top btn-cursos">Ver más</button>
 		</div>
 	</section>
+
+	<!-- <section id="decorative-1"></section> -->
 
 	<!-- VOLUNTARIADO Y COLABORACIÓN -->
 	<section id="voluntariado">
@@ -218,8 +318,10 @@
 	<!-- BLOG -->
 	<section id="blog">
 		<div class="container-general">
-			<h2>Blog</h2>
-			<p class="copy-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum similique porro
+			<h2 class="text-color-white">Blog</h2>
+			<p class="copy-1 text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
+				similique
+				porro
 				accusamus, dolorem
 				non optio qui necessitatibus eius est, nisi eligendi harum dolor? Veritatis fugit dignissimos sapiente
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
@@ -238,36 +340,40 @@
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
 			<div class="container-testimonials">
 				<div class="container-testimonial">
-					<div class="youtube-video">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lPKXdhUMicw?si=GsuHT6jH0RXYicZO"
-							title="YouTube video player" frameborder="0"
+					<div class="container-youtube-video">
+						<iframe class="youtube-video" width="100%" height="100%"
+							src="https://www.youtube.com/embed/lPKXdhUMicw?si=GsuHT6jH0RXYicZO" title="YouTube video player"
+							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
 				</div>
 				<div class="container-testimonial">
-					<div class="youtube-video">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Cnsd74w1FTo?si=MB_w8MaCf3Q3TXuN"
-							title="YouTube video player" frameborder="0"
+					<div class="container-youtube-video">
+						<iframe class="youtube-video" width="100%" height="100%"
+							src="https://www.youtube.com/embed/Cnsd74w1FTo?si=MB_w8MaCf3Q3TXuN" title="YouTube video player"
+							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
 				</div>
 				<div class="container-testimonial">
-					<div class="youtube-video">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/23g2sVYrqxg?si=3451Q9BvU2lAfyFM"
-							title="YouTube video player" frameborder="0"
+					<div class="container-youtube-video">
+						<iframe class="youtube-video" width="100%" height="100%"
+							src="https://www.youtube.com/embed/23g2sVYrqxg?si=3451Q9BvU2lAfyFM" title="YouTube video player"
+							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt.</p>
 				</div>
 				<div class="container-testimonial">
-					<div class="youtube-video">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gkzU-9X7WB4?si=G8rtx0SXJIunqdRo"
-							title="YouTube video player" frameborder="0"
+					<div class="container-youtube-video">
+						<iframe class="youtube-video" width="100%" height="100%"
+							src="https://www.youtube.com/embed/gkzU-9X7WB4?si=G8rtx0SXJIunqdRo" title="YouTube video player"
+							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
@@ -275,6 +381,34 @@
 				</div>
 			</div>
 			<button class="btn_mg-top">Conoce más</button>
+		</div>
+		<div class="section-separator"></div>
+	</section>
+
+	<section id="aliados">
+		<div class="container-general">
+			<div class="container-aliados">
+				<h3>Nuestros aliados:</h3>
+				<div class="container-aliados-logos">
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+					<img class="patrocinador" src="/img/logo_isotipo.webp"></img>
+
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -288,10 +422,12 @@
 				quaerat quasi dolorum nostrum eligendi optio? Id molestiae reiciendis illo adipisci earum, quod officia nemo
 				nesciunt harum labore deserunt, aliquid aut! Voluptatibus.</p>
 			<div class="container-form">
-				<iframe class="map"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.8601363876846!2d-102.43519288503833!3d19.954026289761035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e8b33dcc5e691%3A0xe0c0141a2e4f091!2sLa%20Plaza!5e0!3m2!1sen!2sco!4v1728778247486!5m2!1sen!2sco"
-					width="100%" height="100%" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="container-map">
+					<iframe class="map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.8601363876846!2d-102.43519288503833!3d19.954026289761035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e8b33dcc5e691%3A0xe0c0141a2e4f091!2sLa%20Plaza!5e0!3m2!1sen!2sco!4v1728778247486!5m2!1sen!2sco"
+						width="100%" height="100%" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 				<form action="/php/send-form.php">
 					<label for="">Nombre</label>
 					<input type="text" name="name" id="name" placeholder="Ingresa tu nombre *" required>
@@ -347,7 +483,7 @@
 		<div class="container-general">
 			<div class="container-footer">
 				<div class="info">
-					<p class="info">Inicio</p>
+					<p class="info"><a href="#">Inicio</a></p>
 					<p class="info">¿Quiénes somos?</p>
 					<p class="info">¿Qué hacemos?</p>
 					<p class="info">Fuentes de financiación</p>
@@ -381,6 +517,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="/js/noticias-slider.js"></script>
+	<script src="/js/announcements-close.js"></script>
 </body>
 
 </html>
