@@ -89,6 +89,7 @@ html {
 #announcements {
    position: relative;
    width: 100vw;
+   height: max-content;
    background-color: aquamarine;
    /* animation: none 0.25s forwards 1 ease-out; */
    /*    animation-name: announcementCloseAnim;
@@ -96,7 +97,9 @@ html {
    animation-fill-mode: forwards;
    animation-timing-function: linear;
    animation-iteration-count: infinite; */
-   transition: 1s;
+   overflow: hidden;
+   transition: 0.25s;
+   padding: 0;
 }
 
 .container-announcement {
@@ -213,6 +216,7 @@ nav,
 
 nav {
    flex-direction: row;
+   justify-content: space-between;
    max-height: 10rem;
    font-family: var(--f-family-sans);
    font-weight: 600;
@@ -234,13 +238,25 @@ nav {
 
 .navbar-container-logo {
    position: relative;
-   width: 50rem;
+   max-width: 20rem;
    height: 100%;
    margin-right: 2.5rem;
 }
 
 .navbar-logo {
    width: 100%;
+   animation: logo ease-in-out both;
+   animation-timeline: scroll();
+   animation-range: 0 200px;
+}
+
+@keyframes logo {
+   from {
+      max-width: 20rem;
+   }
+   to {
+      max-width: 12rem;
+   }
 }
 
 a {
@@ -464,6 +480,7 @@ textarea {
    position: relative;
    display: flex;
    flex-direction: row;
+   max-height: min-content;
    left: 0%;
    transition: 1s;
 }
@@ -515,6 +532,7 @@ textarea {
 
 .container-noticia-text {
    text-align: left;
+   max-height: 100%;
 }
 
 .header-noticia {
@@ -523,7 +541,11 @@ textarea {
 }
 
 .copy-1-noticia {
+   max-width: 100%;
    font-size: calc(var(--p-size) * 1.2);
+   overflow: hidden;
+   text-overflow: ellipsis;
+   /* white-space: nowrap; */
 }
 
 .container-cursos {
@@ -593,7 +615,7 @@ textarea {
 }
 
 .container-cursos-img:hover .course-img {
-   filter: opacity(0.5);
+   filter: opacity(0.75);
 }
 
 .copy-1-cursos {
@@ -604,7 +626,7 @@ textarea {
    margin-top: 1rem;
 }
 
-.youtube-video {
+.container-youtube-video {
    width: 100%;
    aspect-ratio: 16/9;
    /* margin-bottom: 2.5rem; */
@@ -612,6 +634,14 @@ textarea {
    border-radius: var(--img-radious-global);
    margin-bottom: 1rem;
    overflow: hidden;
+   background-color: bisque;
+}
+
+.youtube-video:hover {
+   transition: 0.25s;
+}
+.youtube-video:hover {
+   opacity: 0.75;
 }
 
 .container-testimonials {

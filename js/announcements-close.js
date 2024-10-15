@@ -1,17 +1,17 @@
 document.getElementById("announcements-close").addEventListener("click", announcementsClose);
+const initialHeight = document.getElementById("announcements").offsetHeight;
+let newHeight = initialHeight;
+let helper = 1000;
 
 function announcementsClose() {
-   let initialHeight = document.getElementById("announcements").offsetHeight;
-   let newHeight = initialHeight;
-   let helper = 1000;
-   while (newHeight > 0) {
-      setTimeout(function () {
-         document.getElementById("announcements").style.height = newHeight;
-         newHeight = newHeight - 1;
-      }, 100);
-      helper = helper - 1;
-      console.log(newHeight);
-      console.log(helper);
+   console.log("El valor inicial de newHeight es: " + newHeight);
+   for (i = 0; i <= initialHeight; i++) {
+      newHeight--;
+      document.getElementById("announcements").style.height = `${newHeight}px`;
+      console.log(document.getElementById("announcements").offsetHeight);
+      console.log("El valor acutal de newHeight es: " + newHeight);
    }
-   /* document.getElementById("announcements").style.display = "none"; */
+   if (newHeight == 0) {
+      document.getElementById("announcements").style.display = "none";
+   }
 }
