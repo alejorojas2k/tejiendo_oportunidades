@@ -794,3 +794,17 @@ form {
       grid-template-columns: 1fr;
    }
 }
+
+#dropdown-container {
+   display: flex;
+   justify-content: center;  /* Centrado horizontal */
+   align-items: center;      /* Centrado vertical */
+   margin-top: 20px;         /* Espacio superior */
+   height: 50px;            /* Ajusta según necesites */
+}
+
+/* Ajustes del select */
+#dropdown-cursos {
+   padding: 10px;
+   font-size: 16px;
+}
