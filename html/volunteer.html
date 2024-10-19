@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tejiendo Oportunidades</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.webp">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link href="/assets/fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="/css/main.css
+	">
+</head>
+
+<body>
+
+	<header>
+		<!-- MENÚ -->
+		<nav id="navbar"><a href="/" class="navbar-container-logo">
+				<img class="navbar-logo" src="/img/logo.webp" alt="">
+			</a>
+			<ul id="navbar-items">
+				<a class="nav-item" href="#noticias">
+					<li>Noticias</li>
+				</a>
+				<a class="nav-item" href="#cursos">
+					<li>Cursos</li>
+				</a>
+				<a class="nav-item" href="#voluntariado">
+					<li>Voluntariado</li>
+				</a>
+				<a class="nav-item" href="#blog">
+					<li>Blog</li>
+				</a>
+				<a class="nav-item" href="#testimonios">
+					<li>Testimonios</li>
+				</a>
+				<a class="nav-item" href="#contacto">
+					<li>Contacto</li>
+				</a>
+				<li id="container-search"><input type="text" id="field-search">
+					<button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ANUNCIOS -->
+	<section id="announcements">
+		<div class="container-announcement">
+			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur qui libero
+				asperiores at! Quod corrupti in atque neque alias libero.</h4>
+		</div>
+	</section>
+
+	<!-- CARRUSEL -->
+	<section id="slider">
+		<!-- <img class="slider-img" src="/img/slider_img_01.jpg" alt=""> -->
+		<img src="/img/volunteer1.jpg" class="slider-img" autoplay loop></img>
+	</section>
+
+	<!-- VOLUNTARIADO Y COLABORACIONES -->
+
+	<section>
+		<div class="container-general">
+			<h2>¡Se parte de tejiendo oportunidades!</h2>
+			<p> Ayudar es muy sencillo. Solo necesitas rellenar el formulario de inscripción
+				y nos pondremos en contacto contigo para contarte más sobre las oportunidades disponibles. 
+				Ya sea que dispongas de unas pocas horas al mes o varios días a la semana. <br>
+				¡toda ayuda es bienvenida!</p><br><br>
+			<form id="volunteer-form" action="/php/send-form.php" method="POST">
+				<label for="nombre">Nombre Completo </label>
+				<input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo *" required>
+				<label for="email">Correo Electrónico</label>
+				<input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico *" required>
+				<label for="phone">Teléfono</label>
+				<input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono *" required>
+				<label for="area">Área de Voluntariado </label>
+				<select id="area" name="area"  required>
+					<option value="Selecciona">Selecciona una opción</option>
+					<option value="educacion">Educación</option>
+					<option value="deporte">Deporte</option>
+					<option value="medio-ambiente">Medio Ambiente</option>
+					<option value="desarrollo-comunitario">Desarrollo Comunitario</option>
+					<option value="arte-cultura">Arte y Cultura</option>
+				</select>
+				<label for="disponibilidad">Disponibilidad</label>
+				<select id="disponibilidad" name="disponibilidad" required>
+					<option value="Selecciona">Selecciona una opción</option>
+					<option value="mañanas">Mañanas</option>
+					<option value="tardes">Tardes</option>
+					<option value="fines">Fines de semana</option>
+					<option value="completo">Tiempo completo</option>
+				</select>
+				<label for="message">¿Por qué quieres ser voluntario/a?</label>
+				<textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje *" required></textarea>
+				<button type="submit" class="btn_mg-top">Enviar</button>
+			</form>
+			<div id="form-message" style="display:none;"></div>
+		</div>
+	</section>
+
+	<!-- INFO -->
+	<footer>
+		<div class="container-general">
+			<div class="container-footer">
+				<div class="info">
+					<p class="info">Inicio</p>
+					<p class="info">¿Quiénes somos?</p>
+					<p class="info">¿Qué hacemos?</p>
+					<p class="info">Fuentes de financiación</p>
+					<p class="info">Donaciones</p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info">Trabaja con nosotros</p>
+					<p class="info">Nuestros aliados</p>
+					<p class="info">Normatividad</p>
+					<p class="info">Sala de prensa</p>
+					<p class="info"><a href="/html/indexTyC.html">Terminos y Condiciones</a></p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info"><a href=""><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info">Tejiendo Oportunidades</p>
+					<p class="info"><i class="fa-solid fa-location-dot"></i> Calle 10 #20 - 30, Tangamandapio</p>
+					<p class="info"><a href="tel:+5732112345678"><i class="fa-solid fa-phone"></i> +57 321.123.45678</a></p>
+					<p class="info"><a href="mailto:contacto@tejiendooportunidades.org"><i class="fa-solid fa-envelope"></i>
+							contacto@tejiendooportunidades.org</a></p>
+					<p>©2024 Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/js/volunteer.js"></script>
+</body>
+
+</html>
