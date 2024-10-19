@@ -77,7 +77,8 @@
    --slider-button-size: 2.5rem;
 
    /* TRANSITIONS */
-   --transition-normal: 0.2s;
+   --transition-normal: 0.25s;
+   --transition-slow: 0.5s;
 }
 
 .rounded {
@@ -368,7 +369,7 @@ textarea {
    list-style: none;
    outline: none;
    /* border: var(--global-layout-border); */
-   transition: 0.5s;
+   transition: var(--transition-normal);
 }
 
 input,
@@ -589,7 +590,7 @@ textarea {
    flex-direction: row;
    max-height: min-content;
    left: 0%;
-   transition: 1s;
+   transition: var(--transition-slow);
 }
 
 .container-noticia {
@@ -701,7 +702,7 @@ textarea {
    border: var(--global-layout-border);
    overflow: hidden;
    background-color: white;
-   transition: 0.5s;
+   transition: var(--transition-normal);
    background-color: darkorange;
 }
 
@@ -711,7 +712,7 @@ textarea {
    /* aspect-ratio: 4/3; */
    aspect-ratio: 1/1;
    object-fit: cover;
-   transition: 0.5s;
+   transition: var(--transition-normal);
    filter: opacity(1);
    background-color: bisque;
 }
@@ -864,13 +865,22 @@ form {
    font-size: calc(var(--p-size) * 0.8);
    color: white;
 }
-.arrows {
+.arrow-right {
    transform: translateX(0rem);
    transition: var(--transition-normal);
 }
 
-button:hover .arrows {
+button:hover .arrow-right {
    transform: translateX(0.25rem);
+}
+
+.arrow-down {
+   transform: translateY(0rem);
+   transition: var(--transition-normal);
+}
+
+button:hover .arrow-down {
+   transform: translateY(0.25rem);
 }
 
 @media screen and (width <= 1024px) {
