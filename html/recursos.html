@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tejiendo Oportunidades</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.webp">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link href="/assets/fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="/css/main.css">
+	
+	<link rel="stylesheet" href="/css/recursos.css"
+</head>
+
+<body>
+
+	<header>
+	  <!-- MENÚ -->
+	  <nav id="navbar">
+		<div class="container-navbar">
+		  <div>TEJIENDO OPORTUNIDADES</div>
+		  <ul id="navbar-items">
+			<li><a class="nav-item" href="#noticias">Noticias</a></li>
+			<li><a class="nav-item" href="#Recursos">Recursos</a></li>
+			<li><a class="nav-item" href="/html/cursos.html">Cursos</a></li>
+			<li><a class="nav-item" href="#voluntariado">Voluntariado</a></li>
+			<li><a class="nav-item" href="#blog">Blog</a></li>
+			<li><a class="nav-item" href="#testimonios">Testimonios</a></li>
+			<li><a class="nav-item" href="#contacto">Contacto</a></li>
+			<li id="container-search">
+			  <input type="text" id="field-search">
+			  <button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+  
+	  <div id="announcements">
+		<div class="container-announcement">
+		  <h4 id="announcement-icon"><i class="fa-solid fa-bell text-color-red"></i> Noticias:</h4>
+		  <div class="container-announcement-textroll">
+			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+			  <span class="text-color-red">|</span> Facere, corporis dolor quis suscipit modi eveniet.
+			  <span class="text-color-red">|</span> Esse nostrum quos nisi ab alias perspiciatis.
+			  <span class="text-color-red">|</span> Consequatur hic et consequuntur.
+			  <span class="text-color-red">|</span> Vero libero neque impedit et nulla.
+			  <span class="text-color-red">|</span> Modi expedita labore similique unde dignissimos quas minus rem nihil.
+			  <span class="text-color-red">|</span> Voluptatibus molestias necessitatibus porro optio nesciunt, perferendis sunt.</h4>
+			<h4 id="announcements-close"><i class="fa-solid fa-xmark"></i></h4>
+		  </div>
+		</div>
+	  </div>
+	</header>
+  
+	<section id="Destacados">
+	  <h3>Recursos Destacados</h3>
+	  <div class="container-general" id="principal-big">
+		<div id="container-recursos">
+
+		  <!-- Destacado 1 -->
+		  <div id="container-recursos">
+			<div class="recursos">
+			  <div>
+				<img class="recursos-img" src="data:image/png;base64,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" alt="">
+			  </div>
+			  <a href="https://www.khanacademy.org/" target="_blank">
+				<div>
+				  <h5>Cursos gratuitos de Khan Academy en diferentes temas</h5>
+				  <p>Ofrece cursos gratuitos en una variedad de temas, desde matemáticas hasta ciencias y economía. Muy útil para personas que buscan educación gratuita.</p>
+				</div>
+			  </a>
+			</div>
+		  </div>
+  
+		  <!-- Destacado 2 -->
+		  <div id="container-recursos">
+			<div class="recursos">
+			  <div>
+				<img class="recursos-img" src="data:image/png;base64,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" alt="">
+			  </div>
+			  <a href="https://www.coursera.org/" target="_blank">
+				<div>
+				  <h5>Cursos gratuitos de Khan Academy en diferentes temas</h5>
+				  <p>Ofrece cursos gratuitos en una variedad de temas, desde matemáticas hasta ciencias y economía. Muy útil para personas que buscan educación gratuita.</p>
+				</div>
+			  </a>
+			</div>
+		  </div>
+  
+		  <!-- Videos Educativos -->
+		  <div id="container-recursos">
+			<h3>Videos Educativos (YouTube)</h3>
+			<div id="container-recursos">
+			  <div class="recursos-item">
+				<img class="recursos-img" src="data:image/png;base64,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">
+				<a href="https://www.youtube.com/user/TEDEducation" target="_blank">
+				  <h5>TED Education</h5>
+				  Videos cortos y animados sobre una amplia gama de temas educativos.
+				</a>
+			  </div>
+			  <div class="recursos-item">
+				
+				<img class="recursos-img" src="https://yt3.googleusercontent.com/PLwXSK2q_06-MOBbE_ZReBnpfCiJOw85vX8xu68DDHbIlbeO6rtMRqR12mkzY2BOfX-7i9HG=s160-c-k-c0x00ffffff-no-rj">
+				<h5>Crash Course</h5>
+				<a href="https://www.youtube.com/user/crashcourse" target="_blank">
+				  Videos educativos rápidos en temas como historia, biología, literatura y más.
+				</a>
+			  </div>
+			  <div class="recursos-item">
+				
+				<img class="recursos-img" src="https://yt3.googleusercontent.com/ytc/AIdro_lvfnTVBGvBP_3aA28siF4ggUzxsfCnEqN6ncuqRA-4KrU=s160-c-k-c0x00ffffff-no-rj">
+				<h5>Julio Profe</h5>
+				<a href="https://www.youtube.com/@julioprofe" target="_blank">
+				  Videos educativos sobre matemáticas, gemoetría y estadistica entre otros.
+				</a>
+			  </div>
+			</div>
+		  </div>
+  
+		  <!-- Guias Prácticas -->
+		  <div id="container-recursos">
+			<h3>Guias Prácticas</h3>
+			<div id="container-recursos">
+			  <div class="recursos-item">
+				
+				<img class="recursos-img" src="data:image/jpeg;base64,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">
+				<h5>OpenStax</h5>
+				<a href="https://openstax.org/" target="_blank">
+				  Libros de texto gratuitos en materias como matemáticas, ciencias, economía, que pueden descargarse y usarse sin costo.
+				</a>
+			  </div>
+			</div>
+		  </div>
+  
+		  <!-- Cursos Especializados -->
+		  <div id="container-recursos">
+			<h3>Cursos Especializados para Poblaciones Vulnerables</h3>
+			<div id="container-recursos">
+			  <div class="recursos-item">
+				<img class="recursos-img" src="data:image/png;base64,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">
+				<h5>Udemy</h5>
+				<a href="https://www.udemy.com/courses/free/" target="_blank">
+				  Udemy ofrece una sección de cursos gratuitos o de bajo costo que puede ser útil para quienes buscan mejorar sus habilidades en áreas como desarrollo personal, tecnología y más.
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+  </body>
+  
+	<!-- INFO -->
+	<footer>
+		<div class="container-general">
+			<div class="container-footer">
+				<div class="info">
+					<p class="info"><a href="#"><b>NOSOTROS</b></a></p>
+					<p class="info">¿Quiénes somos?</p>
+					<p class="info">¿Qué hacemos?</p>
+					<p class="info">Fuentes de financiación</p>
+					<p class="info">Nuestros aliados</p>
+					<p class="info">Trabaja con nosotros</p>
+					<p class="info">Normatividad</p>
+					<p class="info">Sala de prensa</p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info"><b>OFERTA DE CURSOS</b></p>
+					<p class="info">Primera infancia</p>
+					<p class="info">Adolescencia</p>
+					<p class="info">Familia</p>
+					<p class="info">Vivienda</p>
+					<p class="info">Educación</p>
+					<p class="info">Comunidad</p>
+					<p class="info">Tercera edad</p>
+					<p class="info">Minorías</p>
+				</div>
+				<div class="v-separator"></div>
+				<div class="info">
+					<p class="info">Tejiendo Oportunidades</p><br>
+					<p class="info"><i class="fa-solid fa-location-dot"></i> Calle 10 #20 - 30, Tangamandapio</p>
+					<p class="info"><a href="tel:+5732112345678"><i class="fa-solid fa-phone"></i> +57 321.123.45678</a></p>
+					<p class="info"><a href="mailto:contacto@tejiendooportunidades.org"><i class="fa-solid fa-envelope"></i>
+							contacto@tejiendooportunidades.org</a></p>
+					<p class="info"><a href=""><i class="fa-brands fa-linkedin-in"></i></a>&ensp;<a href=""><i
+								class="fa-brands fa-facebook-f"></i></a>&ensp;<a href=""><i
+								class="fa-brands fa-instagram"></i></a>&ensp;<a href=""><i
+								class="fa-brands fa-x-twitter"></i></a>&ensp;<a href=""><i class="fa-brands fa-youtube"></i></a>
+					</p><br>
+					<p class="info"><a href="/html/indexTyC.html">Terminos y Condiciones</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-general" id="copyright">
+			<p class="copyright-text">© Tejiendo Oportunidades | 2024 | Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="/js/noticias-slider.js"></script>
+	<script src="/js/announcements-close.js"></script>
+</body>
+
+</html>
