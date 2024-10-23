@@ -30,15 +30,16 @@
 	<!-- FONT AWESOME -->
 	<link href="/assets/fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" />
 
-	<link rel="stylesheet" href="/css/main.css
-	">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/volunteer.css">
 </head>
 
 <body>
 
 	<header>
 		<!-- MENÚ -->
-		<nav id="navbar"><a href="/" class="navbar-container-logo">
+		<nav id="navbar">
+			<a href="/" class="navbar-container-logo">
 				<img class="navbar-logo" src="/img/logo.webp" alt="">
 			</a>
 			<ul id="navbar-items">
@@ -67,60 +68,82 @@
 		</nav>
 	</header>
 
-	<!-- ANUNCIOS -->
-	<section id="announcements">
-		<div class="container-announcement">
-			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur qui libero
-				asperiores at! Quod corrupti in atque neque alias libero.</h4>
-		</div>
-	</section>
-
-	<!-- CARRUSEL -->
-	<section id="slider">
-		<!-- <img class="slider-img" src="/img/slider_img_01.jpg" alt=""> -->
-		<img src="/img/volunteer1.jpg" class="slider-img" autoplay loop></img>
-	</section>
-
 	<!-- VOLUNTARIADO Y COLABORACIONES -->
 
-	<section>
-		<div class="container-general">
-			<h2>¡Se parte de tejiendo oportunidades!</h2>
-			<p> Ayudar es muy sencillo. Solo necesitas rellenar el formulario de inscripción
-				y nos pondremos en contacto contigo para contarte más sobre las oportunidades disponibles. 
-				Ya sea que dispongas de unas pocas horas al mes o varios días a la semana. <br>
-				¡toda ayuda es bienvenida!</p><br><br>
-			<form id="volunteer-form" action="/php/send-form.php" method="POST">
-				<label for="nombre">Nombre Completo </label>
-				<input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo *" required>
-				<label for="email">Correo Electrónico</label>
-				<input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico *" required>
-				<label for="phone">Teléfono</label>
-				<input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono *" required>
-				<label for="area">Área de Voluntariado </label>
-				<select id="area" name="area"  required>
-					<option value="Selecciona">Selecciona una opción</option>
-					<option value="educacion">Educación</option>
-					<option value="deporte">Deporte</option>
-					<option value="medio-ambiente">Medio Ambiente</option>
-					<option value="desarrollo-comunitario">Desarrollo Comunitario</option>
-					<option value="arte-cultura">Arte y Cultura</option>
-				</select>
-				<label for="disponibilidad">Disponibilidad</label>
-				<select id="disponibilidad" name="disponibilidad" required>
-					<option value="Selecciona">Selecciona una opción</option>
-					<option value="mañanas">Mañanas</option>
-					<option value="tardes">Tardes</option>
-					<option value="fines">Fines de semana</option>
-					<option value="completo">Tiempo completo</option>
-				</select>
-				<label for="message">¿Por qué quieres ser voluntario/a?</label>
-				<textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje *" required></textarea>
-				<button type="submit" class="btn_mg-top">Enviar</button>
-			</form>
-			<div id="form-message" style="display:none;"></div>
-		</div>
-	</section>
+	<body>
+		<section>
+			<div class="container-gen">
+				<h2>¡Contribuye a construir comunidad!</h2>
+				
+				<div class="volunteer-areas">
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en tecnología" >
+						<h3>Tecnología</h3>
+						<br>
+						<p>Apoya a los futuros programadores del país.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en arte" >
+						<h3>Arte y Cultura</h3> 
+						<br>
+						<p>Participa en actividades culturales y artísticas.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado ambiente" >
+						<h3>Medio Ambiente</h3>
+						<br>
+						<p>Contribuye a iniciativas ambientales y de sostenibilidad.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/e" alt="Voluntariado en educación" >
+						<h3>Educación</h3>
+						<br>
+						<p>Apoya proyectos educativos y de capacitación.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en deporte" >
+						<h3>Deporte</h3>
+						<br>
+						<p>Forma parte de actividades deportivas y recreativas.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en comunidades" >
+						<h3>Comunidades</h3>
+						<br>
+						<p>Apoya procesos comunitarios.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en comedores" >
+						<h3>Comedores Comunitarios</h3>
+						<br>
+						<p>Contribuye a la alimentación de niños y niñas.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+					<div class="area-block">
+						<img src="/img/" alt="Voluntariado en idiomas" >
+						<h3>Idiomas</h3>
+						<br>
+						<p>Apoya proyectos de educación y capacitación en idiomas.</p>
+						<a href="/html/formulariovol.html"><button class="btn_mg-top">Conoce más&ensp;<i
+							class="fa-solid fa-chevron-right arrow-right"></i></button></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 
 	<!-- INFO -->
 	<footer>
@@ -162,7 +185,6 @@
 		</div>
 	</footer>
 
-	<script src="/js/volunteer.js"></script>
 </body>
 
 </html>
