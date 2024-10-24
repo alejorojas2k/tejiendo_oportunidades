@@ -1,0 +1,28 @@
+.container-footer {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   max-height: min-content;
+   gap: 2.5rem;
+}
+
+.v-separator {
+   min-width: 1px;
+   width: 1px;
+   background-color: white;
+}
+
+.info {
+   line-height: 1.75;
+   color: white;
+   text-wrap: nowrap;
+}
+
+#copyright {
+   align-items: start;
+   margin-top: 2.5rem;
+}
+.copyright-text {
+   font-size: calc(var(--p-size) * 0.8);
+   color: white;
+}
