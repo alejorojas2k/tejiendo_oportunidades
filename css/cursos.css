@@ -1,0 +1,77 @@
+.container-cursos {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: var(--gap-global);
+   margin-top: 2.5rem;
+}
+
+.cursos {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #cccccc;
+   overflow: hidden;
+   background-color: #ffffffaa;
+   /*    background-color: chartreuse; */
+}
+
+.cursos-title {
+   font-family: var(--f-family-serif);
+   margin-bottom: 1rem;
+}
+
+.copy-1-img {
+   width: 100%;
+   aspect-ratio: 16/9;
+   margin-bottom: 2.5rem;
+   object-fit: cover;
+   border: var(--global-layout-border);
+}
+
+.container-noticia-img {
+   overflow: hidden;
+   border-radius: var(--img-radious-global);
+}
+
+.container-cursos-img {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   aspect-ratio: 4/3;
+   margin: 0 0 1rem 0;
+   border: var(--global-layout-border);
+   overflow: hidden;
+   background-color: white;
+   transition: var(--transition-quick);
+   background-color: darkorange;
+}
+
+.course-img {
+   width: 100%;
+   /* aspect-ratio: 4/3; */
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   transition: var(--transition-quick);
+   filter: opacity(1);
+   background-color: bisque;
+}
+
+.course-img:hover {
+   transform: scale(1.05);
+}
+
+.container-cursos-img:hover {
+   transform: translatey(-0rem);
+}
+
+.container-cursos-img:hover .course-img {
+   filter: opacity(0.75);
+}
+
+.copy-1-cursos {
+   padding: 0 1rem 1rem 1rem;
+}
+
+.btn-cursos {
+   margin-top: 1rem;
+}
