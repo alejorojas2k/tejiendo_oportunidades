@@ -1,0 +1,43 @@
+.container-youtube-video {
+   width: 100%;
+   aspect-ratio: 16/9;
+   /* margin-bottom: 2.5rem; */
+   border: var(--global-layout-border);
+   border-radius: var(--img-radious-global);
+   margin-bottom: 1rem;
+   overflow: hidden;
+   background-color: bisque;
+}
+
+.youtube-video:hover {
+   transition: var(--transition-quick);
+}
+.youtube-video:hover {
+   opacity: 0.75;
+}
+
+.container-testimonials {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 100%;
+   gap: var(--gap-global);
+   margin-top: 2.5rem;
+}
+
+.container-testimonial {
+   display: flex;
+   flex-direction: column;
+   /*    background-color: deeppink; */
+}
+
+.img-testimonial {
+   width: 100%;
+   aspect-ratio: 4/3;
+   margin-bottom: 1rem;
+   object-fit: cover;
+   border: var(--global-layout-border);
+}
+
+.testimonial {
+   font-size: calc(var(--p-size) * 1.25);
+}
