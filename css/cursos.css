@@ -60,6 +60,22 @@
     padding-right: 1rem;
  }
 
+ .cursos-title-cursos {
+   font-size: 1.5rem; /* Tamaño por defecto */
+ }
+ 
+ @media (max-width: 768px) { /* Pantallas tablet y móviles */
+   .cursos-title-cursos {
+     font-size: 1.2rem; /* Ajuste para pantallas más pequeñas */
+   }
+ }
+ 
+ @media (max-width: 480px) { /* Pantallas móviles pequeñas */
+   .cursos-title-cursos {
+     font-size: 1rem; /* Tamaño aún más pequeño para pantallas muy reducidas */
+   }
+ }
+
  .container-cursos-img {
     position: relative;
     display: flex;
@@ -100,8 +116,8 @@
    padding: 0rem 1rem 1rem 1rem;
 }
 
-.btn-cursos {
-   margin-top: 1rem;
+.btn-cursos-cursos {
+   margin-top: auto;
 }
 
 
