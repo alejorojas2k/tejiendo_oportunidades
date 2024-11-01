@@ -1,33 +1,95 @@
-.container-cursos {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   gap: var(--gap-global);
-   margin-top: 2.5rem;
+
+
+#botones-categorias-cursos {
+   display: flex;
+   flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea si no hay suficiente espacio */
+   justify-content: center;
+   gap: 10px; /* Espacio entre botones */
+   padding: 1.5rem;
 }
 
-.cursos {
+.btn-cursos-cursos {
+   margin-top: auto;
+}
+
+.container-cursos-img:hover {
+   transform: translatey(-0rem);
+}
+
+.container-general-cursos-cursos{
+   
+}
+
+.course-img-cursos {
+   width: 100%;
+   /* aspect-ratio: 4/3; */
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   transition: var(--transition-quick);
+   filter: opacity(1);
+   background-color: bisque;
+}
+
+.course-img-cursos:hover {
+   transform: scale(1.05);
+}
+
+#cursos-cursos {
+   padding: 1rem 2rem 2rem 2rem;
+   background-color: bisque;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+   gap: 20px; /* Espacio entre elementos, ajusta según prefieras */
+}
+
+#cursos-cursos-sup {
+   background-color: bisque;
+   padding: 2rem 2rem 1rem 2rem;
+}
+
+.cursos-cursos {
    display: flex;
    flex-direction: column;
    border: 1px solid #cccccc;
    overflow: hidden;
    background-color: #ffffffaa;
-   /*    background-color: chartreuse; */
 }
 
-.cursos-title {
+/* .container-cursos-img {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: var(--gap-global);
+   margin-top: 2.5rem;
+} */
+
+/* .container-cursos-img-cursos {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   /*aspect-ratio: 4/3;
+   margin: 0 0 1 rem 0;
+   border: var(--global-layout-border);
+   overflow: hidden;
+   background-color: white;
+   transition: var(--transition-quick);
+   background-color: darkorange;
+} */
+
+
+.cursos-title-cursos {
    font-family: var(--f-family-serif);
    margin-bottom: 1rem;
 }
 
-.copy-1-img {
+.copy-1-img-cursos {
    width: 100%;
-   aspect-ratio: 16/9;
+   /*aspect-ratio: 16/9;*/
    margin-bottom: 2.5rem;
    object-fit: cover;
    border: var(--global-layout-border);
 }
 
-<<<<<<< HEAD
  .cursos-title-cursos {
    font-size: 1.5rem; /* Tamaño por defecto */
  }
@@ -44,74 +106,25 @@
    }
  }
 
- .container-cursos-img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    aspect-ratio: 4/3;
-    margin: 0 0 1rem 0;
-    border: var(--global-layout-border);
-    overflow: hidden;
-    background-color: white;
-    transition: var(--transition-normal);
-    background-color: darkorange;
- }
-=======
 .container-noticia-img {
    overflow: hidden;
    border-radius: var(--img-radious-global);
 }
->>>>>>> main
 
-.container-cursos-img {
-   position: relative;
-   display: flex;
-   align-items: center;
-   width: 100%;
-   aspect-ratio: 4/3;
-   margin: 0 0 1rem 0;
-   border: var(--global-layout-border);
-   overflow: hidden;
-   background-color: white;
-   transition: var(--transition-quick);
-   background-color: darkorange;
-}
 
-.course-img {
-   width: 100%;
-   /* aspect-ratio: 4/3; */
-   aspect-ratio: 1/1;
-   object-fit: cover;
-   transition: var(--transition-quick);
-   filter: opacity(1);
-   background-color: bisque;
-}
-
-.course-img:hover {
-   transform: scale(1.05);
-}
-
-.container-cursos-img:hover {
-   transform: translatey(-0rem);
-}
-
-.container-cursos-img:hover .course-img {
+/* .container-cursos-img:hover .course-img {
    filter: opacity(0.75);
-}
+} */
 
-.copy-1-cursos {
+.copy-1-cursos-cursos {
    padding: 0 1rem 1rem 1rem;
 }
 
-<<<<<<< HEAD
-.btn-cursos-cursos {
-   margin-top: auto;
+.copy-1-cursos {
+   text-align: center;
+   
 }
 
 
-=======
-.btn-cursos {
-   margin-top: 1rem;
-}
->>>>>>> main
+
+
