@@ -5,10 +5,21 @@
 //});
 
 
+document.getElementById('dropdown-cursos').addEventListener('change', function() {
+    const selectedValue = this.value; // Captura el valor seleccionado
 
+    if (selectedValue) {
+        const targetElement = document.getElementById(selectedValue); // Encuentra el elemento con el id seleccionado
+
+        if (targetElement) {
+            // Scroll suave hacia el elemento
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
 
 function filtrarCursos(categoria) {
-    var cursos = document.getElementsByClassName("cursos-cursos");
+    var cursos = document.getElementsByClassName("cursos");
     
     for (var i = 0; i < cursos.length; i++) {
         if (categoria === "all") {
