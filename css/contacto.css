@@ -1,0 +1,118 @@
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   /*    background-color: aqua; */
+}
+
+.container-map {
+   border: var(--global-layout-border);
+   border-radius: var(--img-radious-global);
+   overflow: hidden;
+}
+
+.map {
+   list-style: none;
+   border: none;
+   outline: none;
+}
+
+.container-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 100%;
+   gap: 2.5rem;
+   margin: 2.5rem auto auto auto;
+}
+
+label {
+   font-family: var(--f-family-sans);
+   font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+   /* display: flex;
+   align-self: center; */
+   min-height: var(--field-height-global);
+   font-family: var(--f-family-sans);
+   font-size: calc(var(--p-size) * 1);
+   font-weight: 400;
+   border-radius: var(--btn-radious-global);
+   list-style: none;
+   outline: none;
+   /* border: var(--global-layout-border); */
+   transition: var(--transition-quick);
+}
+
+input,
+select,
+textarea {
+   border: 0.1rem solid white;
+}
+
+button,
+input,
+select {
+   padding: var(--btn-padding-global);
+}
+
+textarea {
+   padding: var(--textarea-padding-global);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.container-search:focus {
+   border: 0.1rem solid var(--palette3-color-5);
+}
+
+select {
+   width: 100%;
+   appearance: none;
+   cursor: pointer;
+}
+
+.container-select {
+   position: relative;
+   min-width: 10rem;
+   min-height: var(--field-height-global);
+}
+
+.new-select-arrow {
+   position: absolute;
+   font-size: calc(var(--p-size) * 0.85);
+   top: calc(50% - (var(--p-size) * 0.85) / 2);
+   right: var(--btn-lateral-padding);
+   z-index: 10;
+   pointer-events: none;
+}
+
+button,
+input[type="submit"] {
+   font-size: calc(var(--p-size) * 1);
+   font-weight: 600;
+   color: white;
+   cursor: pointer;
+   border: none;
+   background-color: var(--palette3-color-5);
+}
+
+button:hover,
+input[type="submit"]:hover {
+   background-color: var(--palette3-color-4);
+   box-shadow: 0 0 0 var(--palette3-color-3-O22);
+}
+
+/* select {
+   max-width: max-content;
+} */
+
+textarea {
+   min-height: 10rem;
+   resize: none;
+   overflow: hidden;
+}
