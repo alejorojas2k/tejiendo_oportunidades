@@ -168,7 +168,7 @@ p {
 }
 
 #blog {
-   background-image: url(/img/engin-akyurt-yNIdeT0lnrA-unsplash.webp);
+
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
@@ -232,5 +232,6 @@ button:hover .arrow-down {
       grid-template-columns: 1fr;
    }
 }
+
 
 
