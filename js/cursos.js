@@ -19,7 +19,7 @@ document.getElementById('dropdown-cursos').addEventListener('change', function()
 });
 
 function filtrarCursos(categoria) {
-    var cursos = document.getElementsByClassName("cursos");
+    var cursos = document.getElementsByClassName("cursos-cursos");
     
     for (var i = 0; i < cursos.length; i++) {
         if (categoria === "all") {
