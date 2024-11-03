@@ -1,133 +1,136 @@
-/* Estilos para la página de voluntariado */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--navbar-background);
-    margin: 0;
-    padding: 0;
-    text-align: center;
+   font-family: Arial, sans-serif;
+   background-color: var(--navbar-background);
+   margin: 0;
+   padding: 0;
+   text-align: center;
 }
 
 .container-gen {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
 }
 
 h2 {
-    color: #333;
-    margin-bottom: 20px;
+   color: #333;
+   margin-bottom: 20px;
 }
 
 p {
-    color: #666;
-    font-size: 16px;
+   color: #666;
+   font-size: 16px;
 }
 
 
 .volunteer-areas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin-top: 30px;
 }
 
 .area-block {
-    width: 250px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    padding: 15px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+   
+   flex-basis: calc(33.33% - 20px);
+   max-width: 300px; 
+   min-width: 200px; 
+   background-color: #f0f0f0;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   text-align: center;
+   padding: 15px;
+   cursor: pointer;
+   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .area-block:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
+   background-color: #e0e0e0;
+   transform: scale(1.05);
 }
 
 .area-block img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 8px 8px 0 0;
 }
 
 .area-block h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: #333;
+   margin: 10px 0 5px;
+   font-size: 18px;
+   color: #333;
 }
 
 .area-block p {
-    font-size: 14px;
-    color: #666;
+   font-size: 14px;
+   color: #666;
 }
 
 
 button,
 input[type="submit"] {
-   font-size: calc(var(--p-size) * 1);
-   font-weight: 600;
-   color: white;
-   cursor: pointer;
-   border: none;
-   background-color: var(--palette3-color-5);
+  font-size: calc(var(--p-size) * 1);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: var(--palette3-color-5);
 }
 
 button:hover,
 input[type="submit"]:hover {
-   background-color: var(--palette3-color-4);
-   box-shadow: 0 0 0 var(--palette3-color-3-O22);
+  background-color: var(--palette3-color-4);
+  box-shadow: 0 0 0 var(--palette3-color-3-O22);
 }
 
 /* select {
-   max-width: max-content;
+  max-width: max-content;
 } */
 
 textarea {
-   min-height: 10rem;
-   resize: none;
-   overflow: hidden;
+  min-height: 10rem;
+  resize: none;
+  overflow: hidden;
 }
 
 .btn_mg-top {
-   margin: 2.5rem auto auto auto;
+  margin: 2.5rem auto auto auto;
 }
 
 nav,
 .container-general,
 .container-navbar {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   max-width: var(--max-width-lg);
-   /*    background-color: blueviolet; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width-lg);
+  /*    background-color: blueviolet; */
 }
 
 nav {
-   flex-direction: row;
-   justify-content: space-between;
-   max-height: 10rem;
-   font-family: var(--f-family-sans);
-   font-weight: 600;
-   padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-   animation: navbar ease-in-out both;
-   animation-timeline: scroll();
-   animation-range: 0 200px;
-   /*    background-color: darkblue; */
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 10rem;
+  font-family: var(--f-family-sans);
+  font-weight: 600;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  animation: navbar ease-in-out both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+  /*    background-color: darkblue; */
 }
 
 @keyframes navbar {
    from {
-      padding: 2.5rem 0 2.5rem 0;
+       padding: 2.5rem 0;
    }
    to {
-      padding: 1rem 0 1rem 0;
+       padding: 1rem 0;
    }
 }
 
@@ -147,9 +150,27 @@ nav {
 
 @keyframes logo {
    from {
-      max-width: 20rem;
+       max-width: 20rem;
    }
    to {
-      max-width: 12rem;
+       max-width: 12rem;
+   }
+}
+
+
+@media (max-width: 768px) {
+   .area-block {
+       flex-basis: calc(50% - 20px);
+   }
+}
+
+@media (max-width: 480px) {
+   .container-gen {
+       width: 90%;
+       padding: 10px;
+   }
+
+   .area-block {
+       flex-basis: 100%; 
    }
 }
