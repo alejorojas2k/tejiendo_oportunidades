@@ -1,4 +1,3 @@
-/* Estilos específicos para la sección del blog */
 #blog {
    background-color: var(--palette3-color-1);
    padding: 0;
@@ -17,19 +16,16 @@
 #blog .container-blog {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   gap: var(--gap-global);
+   gap: 10px;
 }
 
 #blog .blog-post {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    background-color: white;
    border-radius: var(--img-radious-global);
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
    overflow: hidden;
-   padding: 1.25rem;
-   transition: transform 0.3s;
+   padding: 15px;
+   transition: transform 0.3s ease;
 }
 
 #blog .blog-post:hover {
@@ -77,4 +73,19 @@
 
 .arrow-right {
    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+   #blog .container-blog {
+      grid-template-columns: repeat(
+         auto-fill,
+         minmax(200px, 1fr)
+      ); /* 200px en pantallas medianas */
+   }
+}
+
+@media (max-width: 480px) {
+   #blog .container-blog {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+   }
 }
