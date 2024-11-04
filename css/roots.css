@@ -1,9 +1,9 @@
 :root {
    /* COLORS */
    --iridium: #181818;
-   --iridium-50: #18181888;
+   --iridium-25: #18181844;
    --navbar-background: var(--palette3-color-1);
-   --navbar-shadow: var(--iridium-50);
+   --navbar-shadow: var(--iridium-25);
    /* COLORS - paleta 1 */
    --palette1-color-1: #32394f;
    --palette1-color-2: #e37276;
@@ -40,6 +40,8 @@
    --p-line-height: 1.5;
 
    /* WIDTHS */
+   --max-width-xxs: 328px;
+   --max-width-xs: 468px;
    --max-width-sm: 768px;
    --max-width-md: 900px;
    --max-width-lg: 1024px;
