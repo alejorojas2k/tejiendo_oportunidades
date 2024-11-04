@@ -40,6 +40,8 @@
    --p-line-height: 1.5;
 
    /* WIDTHS */
+   --max-width-xxs: 328px;
+   --max-width-xs: 468px;
    --max-width-sm: 768px;
    --max-width-md: 900px;
    --max-width-lg: 1024px;
