@@ -34,13 +34,17 @@
 	
 	<link rel="stylesheet" href="/css/recursos.css">
 	<link rel="stylesheet" href="/css/roots.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/buttons.css">
 	<link rel="stylesheet" href="/css/navbar.css">
 	<link rel="stylesheet" href="/css/announcements.css">
+	<link rel="stylesheet" href="/css/slider.css">
 	<link rel="stylesheet" href="/css/noticias.css">
-	<link rel="stylesheet" href="/css/cursos.css">
+	<link rel="stylesheet" href="/css/section_cursos.css">
 	<link rel="stylesheet" href="/css/vivencias.css">
 	<link rel="stylesheet" href="/css/contacto.css">
 	<link rel="stylesheet" href="/css/footer.css">
+	<link rel="stylesheet" href="/css/blog.css">
 </head>
 
 <body>
@@ -48,35 +52,142 @@
 	<header>
 	  <!-- MENÚ -->
 	  <nav id="navbar">
-		<div class="container-navbar">
-		  <div>TEJIENDO OPORTUNIDADES</div>
-		  <ul id="navbar-items">
-			<li><a class="nav-item" href="#noticias">Noticias</a></li>
-			<li><a class="nav-item" href="#Recursos">Recursos</a></li>
-			<li><a class="nav-item" href="/html/cursos.html">Cursos</a></li>
-			<li><a class="nav-item" href="volunteer.html">Voluntariado</a></li>
-			<li><a class="nav-item" href="blog.html">Blog</a></li>
-			<li><a class="nav-item" href="#testimonios">Testimonios</a></li>
-			<li><a class="nav-item" href="#contacto">Contacto</a></li>
-			<li id="container-search">
-			  <input type="text" id="field-search">
-			  <button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
+		<a href="/" class="navbar-container-logo">
+			<img class="navbar-logo" src="/img/logo.webp" alt="">
+		</a>
+		<ul id="navbar-items">
+			<a class="nav-item" href="#noticias">
+				<li>Noticias<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title">Noticias Destacadas</span></p>
+					<p>Las noticias más importantes sobre ofertas educativas en el pais.</p>
+				</div>
+				
+			</div>
+			<a class="nav-item" href="/html/cursos.html">
+				<li>Cursos<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title">Adultos</span></p>
+					<p>Carpintería</p>
+					<p>Cocina</p>
+					<p>Deportes</p>
+					<p>Pintura</p>
+					<p>Programación</p>
+				</div>
+				<div>
+					<p><span class="navbar-submenu-title">Niños y jóvenes</span></p>
+					<p>Cocina</p>
+					<p>Deportes</p>
+					<p>Cooperación</p>
+					<p>Liderazgo</p>
+					<p>Robótica</p>
+					<p>Pintura</p>
+					<p>Programación</p>
+				</div>
+			</div>
+			<a class="nav-item" href="volunteer.html">
+				<li>Voluntariado<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title"></span></p>
+					<p>Tecnología</p>
+					<p>Arte y Cultura</p>
+					<p>Educación</p>
+				</div>
+				<div>
+					<p><span class="navbar-submenu-title"></span></p>
+					<p>Idiomas</p>
+					<p>Comunidades</p>
+					<p>Comedores comunitarios</p>
+				</div>
+				<div>
+					<p><span class="navbar-submenu-title"></span></p>
+					<p>Deportes</p>
+					<p>Medio ambiente</p>
+				</div>
+			</div>
+			<a class="nav-item" href="blog.html">
+				<li>Blog<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p>Creando comunidades</p>
+					<p>El cuidado del medio ambiente</p>
+					<p>Los deporte una salida</p>
+				</div>
+			</div>
+			<a class="nav-item" href="#testimonios">
+				<li>Testimonios<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title">Testimonios</span></p>
+					<p>Testimonios y mensajes sobre el uso de nuestra plataforma y sus experiencias</p>
+				</div>
+				
+			</div>
+			<a class="nav-item" href="#contacto">
+				<li>Contacto<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title">Contáctanos</span></p>
+					<p>Lugar donde te puedes poner en contacto con nosotros.</p>
+
+				</div>
+
+			</div>
+			<!-- <li id="container-search"><input type="text" id="field-search">
+				<button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</li> -->
+			
+			<a class="nav-item" href="html\recursos.html">
+				<li>Recursos Adicionales<div class="nav-item-underline"></div>
+				</li>
+			</a>
+			<div class="container-navbar-expand">
+				<div>
+					<p><span class="navbar-submenu-title">Plataformas Recomendadas</span></p>
+					<p>Conoce otras páginas y aplicaciones de aprendizaje donde podrás seguir 
+						profundizando en los temas que más te interesan.</p>
+					
+				</div>
+				<div>
+					<p><span class="navbar-submenu-title">Videos Educativos</span></p>
+					<p>Te ofrecemos una selección de videos de YouTube y otras plataformas, 
+						donde expertos explican desde habilidades técnicas hasta temas de desarrollo personal. </p>
+					
+				</div>
+				<div>
+					<p><span class="navbar-submenu-title">Guías Prácticas</span></p>
+					<p> Descarga guías prácticas en PDF y otros materiales que podrás
+						 estudiar cuando quieras, ideales para complementar tus estudios. </p>
+					
+				</div>
+			</div>
+			
+		</ul>
+	</nav>
   
 	  <div id="announcements">
 		<div class="container-announcement">
 		  <h4 id="announcement-icon"><i class="fa-solid fa-bell text-color-red"></i> Noticias:</h4>
 		  <div class="container-announcement-textroll">
-			<h4 id="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-			  <span class="text-color-red">|</span> Facere, corporis dolor quis suscipit modi eveniet.
-			  <span class="text-color-red">|</span> Esse nostrum quos nisi ab alias perspiciatis.
-			  <span class="text-color-red">|</span> Consequatur hic et consequuntur.
-			  <span class="text-color-red">|</span> Vero libero neque impedit et nulla.
-			  <span class="text-color-red">|</span> Modi expedita labore similique unde dignissimos quas minus rem nihil.
-			  <span class="text-color-red">|</span> Voluptatibus molestias necessitatibus porro optio nesciunt, perferendis sunt.</h4>
+			<h4 id="announcement">
+			  <span class="text-color-red">|</span> ‘Talento Tech’ llega a las 32 capitales del
+			   país para beneficiar a 113.000 personas con su innovadora oferta de formación digital
+			</h4>
 			<h4 id="announcements-close"><i class="fa-solid fa-xmark"></i></h4>
 		  </div>
 		</div>
