@@ -109,3 +109,105 @@
    text-align: center;
    margin-top: 1rem; /* Espacio opcional para separarlo del texto anterior */
 }
+
+/* ---------- */
+
+
+
+@media (max-width: 900px) {
+   nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      animation: none; 
+   } 
+
+   nav ul {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+   } 
+
+   nav li {
+      margin: 0.5rem; 
+      font-size: 0.9rem; 
+   } 
+} 
+
+
+@media (max-width: 768px) {
+  
+   .container-footer {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+      justify-content: center;
+   }
+
+   .v-separator {
+      min-width: 1px;
+      width: 1px;
+      background-color: #10142f !important;
+   }
+      
+}
+
+/* .navbar-container-logo-hamburguer{
+   display: none;
+}
+
+.navbar-hambuguer{
+   display: none;
+}
+
+.nav-item-hamburguesa{
+   display: none;
+} 
+
+#navbar-hamburguer{
+   display: none;
+} */
+
+
+
+/* Estilos para dispositivos móviles */
+/* @media (max-width: 768px) {
+
+   .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+  }
+
+   #navbar-items {
+      display: none; 
+   }
+
+   .navbar-container-logo {
+      display: none;
+      position: center;
+   }
+
+   .navbar-container-logo-hamburguer{
+      display: block;
+   }
+
+   .nav-item-hamburguesa{
+      display: block;
+   }
+
+       */
+  /* }
+
+
+
+    #navbar-items.show {
+       display: flex;
+   }
+
+   
+   .navbar-container-logo, .nav-item {
+       display: none;
+   } */
+
+ 
+
