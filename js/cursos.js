@@ -12,3 +12,17 @@ function filtrarCursos(categoria) {
         }
     }
 }
+
+// function toggleMenu() {
+//     const navbarItems = document.getElementById('navbar-items');
+//     navbarItems.classList.toggle('show');
+// }
+
+// function toggleMenu() {
+//     const menu = document.getElementById('navbar-items-hamburguer');
+//     if (menu.style.display === 'block') {
+//         menu.style.display = 'none'; // Ocultar el menú
+//     } else {
+//         menu.style.display = 'block'; // Mostrar el menú
+//     }
+// }
